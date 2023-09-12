@@ -1,12 +1,18 @@
 import { string, int } from 'prop-types';
 import './styles.scss';
-import StemStandard from './Stem/StemStandard';
-import StemCap from './Stem/StemCap';
-import StemBox from './Stem/StemBox';
-import HousingTopStandard from './HousingTop/HousingTopStandard';
-import HousingTopDefault from './HousingTop/HousingTopDefault';
-import HousingBottomFive from './HousingBottom/HousingBottomFive';
-import HousingBottomThree from './HousingBottom/HousingBottomThree';
+import { 
+    StemStandard,
+    StemCap,
+    StemBox
+} from './Stem/Stem';
+import {
+    HousingTopStandard,
+    HousingTopDefault
+} from './HousingTop/HousingTop';
+import {
+    HousingBottomFive,
+    HousingBottomThree
+} from './HousingBottom/HousingBottom';
 
 // TODO: This code is wank. Fix it
 

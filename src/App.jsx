@@ -26,6 +26,28 @@ function App() {
         housing_bottom_color='179,131,226'
         mount={5}
       />
+      <Switch
+        id='test'
+        stem_color='237,237,54'
+        stem_type='standard'
+        stem_construction='box'
+        housing_top_type='transparent'
+        housing_top_color='255,177,228'
+        housing_bottom_type='transparent'
+        housing_bottom_color='179,131,226'
+        mount={5}
+      />
+      <Switch
+        id='test'
+        stem_color='237,237,54'
+        stem_type='standard'
+        stem_construction='standard'
+        housing_top_type='transparent'
+        housing_top_color='255,177,228'
+        housing_bottom_type='standard'
+        housing_bottom_color='190,131,226'
+        mount={5}
+      />
     </>
   )
 }
