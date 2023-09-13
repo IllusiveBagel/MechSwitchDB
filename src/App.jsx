@@ -1,55 +1,48 @@
-import './App.css'
-import Switch from './components/Switch/Switch'
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import Grid from '@mui/material/Grid';
+
+import GridItem from './components/GridItem/GridItem';
+
+const darkTheme = createTheme({
+	palette: {
+		mode: 'dark',
+	},
+});
 
 function App() {
-  return (
-    <>
-      <Switch
-        id='test'
-        stem_color='237,237,54'
-        stem_type='standard'
-        stem_construction='standard'
-        housing_top_type='transparent'
-        housing_top_color='255,177,228'
-        housing_bottom_type='transparent'
-        housing_bottom_color='179,131,226'
-        mount={5}
-      />
-      <Switch
-        id='test'
-        stem_color='237,237,54'
-        stem_type='standard'
-        stem_construction='cap'
-        housing_top_type='transparent'
-        housing_top_color='255,177,228'
-        housing_bottom_type='transparent'
-        housing_bottom_color='179,131,226'
-        mount={5}
-      />
-      <Switch
-        id='test'
-        stem_color='237,237,54'
-        stem_type='standard'
-        stem_construction='box'
-        housing_top_type='transparent'
-        housing_top_color='255,177,228'
-        housing_bottom_type='transparent'
-        housing_bottom_color='179,131,226'
-        mount={5}
-      />
-      <Switch
-        id='test'
-        stem_color='237,237,54'
-        stem_type='standard'
-        stem_construction='standard'
-        housing_top_type='transparent'
-        housing_top_color='255,177,228'
-        housing_bottom_type='standard'
-        housing_bottom_color='190,131,226'
-        mount={5}
-      />
-    </>
-  )
+	return (
+		<ThemeProvider theme={darkTheme}>
+			<CssBaseline />
+			<Grid
+				container
+				width="100vw"
+				height="100vh"
+				direction="row"
+				justifyContent="center"
+				alignItems="center"
+			>
+				<Grid item xs={2}>
+					<GridItem
+						name='Cherry MX Blue'
+						switchData={{
+							id: 'CherryBlue',
+							stem_color: '68,169,255',
+							stem_type: 'standard',
+							stem_construction: 'standard',
+							housing_top_type: 'standard',
+							housing_top_color: '58,64,69',
+							housing_bottom_type: 'standard',
+							housing_bottom_color: '58,64,69',
+							mount: 5
+						}}
+						volume='Loud'
+						type='Clicky'
+					/>
+				</Grid>
+			</Grid>
+		</ThemeProvider>
+	)
 }
 
 export default App
