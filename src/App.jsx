@@ -34,7 +34,7 @@ function App() {
 							housing_top_color: '58,64,69',
 							housing_bottom_type: 'standard',
 							housing_bottom_color: '58,64,69',
-							mount: 5
+							mount: 'Both'
 						}}
 						volume='Loud'
 						type='Clicky'

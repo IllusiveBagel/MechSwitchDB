@@ -8,13 +8,16 @@ import Box from '@mui/material/Box';
 import Tooltip from '@mui/material/Tooltip'
 
 import Switch from '../Switch/Switch';
-import { ReactComponent as Tactile } from '../../assets/switch_type_tactile.svg';
-import { ReactComponent as Linear } from '../../assets/switch_type_linear.svg';
-import { ReactComponent as Clicky} from '../../assets/switch_type_clicky.svg';
-import { ReactComponent as PCB } from '../../assets/switch_mount_pcb.svg';
-import { ReactComponent as Plate } from '../../assets/switch_mount_plate.svg';
-import { ReactComponent as VolumeNormal } from '../../assets/volume-normal.svg';
-import { ReactComponent as VolumeLoud } from '../../assets/volume-loud.svg';
+import {
+    Tactile,
+    Linear,
+    Clicky,
+    PCB,
+    Plate,
+    VolumeNormal,
+    VolumeLoud,
+    VolumeSilent
+} from '../Icons/Icons';
 
 const GridItem = ({ name, switchData, volume, type }) => {
 
@@ -33,10 +36,12 @@ const GridItem = ({ name, switchData, volume, type }) => {
 
     const Mount = () => {
         switch(switchData.mount) {
-            case 5:
+            case '5':
                 return <PCB height='100%' />;
-            case 3:
+            case '3':
                 return <Plate height='100%' />;
+            case 'Both':
+                return <PCB height='100%' />;
         }
     }
 
@@ -46,6 +51,8 @@ const GridItem = ({ name, switchData, volume, type }) => {
                 return <VolumeNormal height='100%' />;
             case 'Loud':
                 return <VolumeLoud height='100%' />;
+            case 'Silent':
+                return <VolumeSilent height='100%' />;
             default:
                 return <VolumeNormal height='100%' />;
         }
@@ -96,7 +103,7 @@ const GridItem = ({ name, switchData, volume, type }) => {
                             <Type />
                         </span>
                     </Tooltip>
-                    <Tooltip title={`${switchData.mount} Pin`} placement="bottom">
+                    <Tooltip title={switchData.mount === 'Both' ? 'Both 3 and 5 Pin' : `${switchData.mount} Pin`} placement="bottom">
                         <span style={{ height: '100%'}}>
                             <Mount />
                         </span>

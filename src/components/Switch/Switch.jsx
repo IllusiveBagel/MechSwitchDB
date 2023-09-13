@@ -1,4 +1,4 @@
-import { string, int } from 'prop-types';
+import { string } from 'prop-types';
 import './styles.scss';
 import { 
     StemStandard,
@@ -101,10 +101,13 @@ const Switch = ({
             </div>
 
             <div className="c-switch__icon-housing-bottom">
-                {mount === 5 &&
+                {mount === '5' &&
                     <HousingBottomFive housing_bottom_fill={housing_bottom_fill} />
                 }
-                {mount === 3 &&
+                {mount === 'Both' &&
+                    <HousingBottomFive housing_bottom_fill={housing_bottom_fill} />
+                }
+                {mount === '3' &&
                     <HousingBottomThree housing_bottom_fill={housing_bottom_fill} />
                 }
             </div>
@@ -121,7 +124,7 @@ Switch.propTypes = {
     housing_top_color: string,
     housing_bottom_type: string,
     housing_bottom_color: string,
-    mount: int
+    mount: string
 }
 
 export default Switch
