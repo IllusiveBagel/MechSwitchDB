@@ -1,6 +1,6 @@
 import { string } from 'prop-types';
 
-const HousingTopStandard = ({ housing_top_fill }) => {
+const HousingTopStandard = ({ housingTopFill }) => {
     return (
         <svg width="58" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M24.898 4.257a.6.6 0 01.598-.643h6.166a.6.6 0 01.599.644l-.39 5.356s4.198-2.898 6.827-2c1.5.512 2.388 1.137 3.195 2.5 1.777 3 0 9.87 0 9.87H15.266s-2.096-5.87.404-9.87c1.022-1.635 2.345-2.267 4.259-2.5 2.215-.27 5.351 2 5.351 2l-.382-5.357z" fill="url(#housing_top_standard_paint0_linear)" />
@@ -10,7 +10,7 @@ const HousingTopStandard = ({ housing_top_fill }) => {
             <path d="M15.47.114h26.4v19.87h-26.4V.114z" fill="url(#housing_top_standard_paint4_linear)" />
             <path d="M15.47.114v19.87h-4.8V.114h4.8z" fill="url(#housing_top_standard_paint5_linear)" fillOpacity=".4" />
             <path d="M42.17.114v19.87h4.8V.114h-4.8z" fill="url(#housing_top_standard_paint6_linear)" fillOpacity=".4" />
-            <path d="M9.032.745A1.2 1.2 0 0110.142 0H47.2a1.2 1.2 0 011.11.745l5.563 13.586c.08.194.27.321.479.321.196 0 .375.11.463.286l2.45 4.897a.1.1 0 01-.089.145H.17a.1.1 0 01-.088-.146l2.605-4.958a.418.418 0 01.37-.224c.17 0 .323-.103.388-.26L9.032.745z" className="switch-housing-top" fill={housing_top_fill} />
+            <path d="M9.032.745A1.2 1.2 0 0110.142 0H47.2a1.2 1.2 0 011.11.745l5.563 13.586c.08.194.27.321.479.321.196 0 .375.11.463.286l2.45 4.897a.1.1 0 01-.089.145H.17a.1.1 0 01-.088-.146l2.605-4.958a.418.418 0 01.37-.224c.17 0 .323-.103.388-.26L9.032.745z" className="switch-housing-top" fill={housingTopFill} />
             <path d="M46.67.114h-36v4.15h36V.114z" fill="url(#housing_top_standard_paint7_linear)" />
             <g opacity=".8">
                 <path d="M9.27.666l-5.7 13.948h6.1a1 1 0 001-1V.114s-1.067 0-1.4.552z" fill="url(#housing_top_standard_paint8_linear)" />
@@ -90,7 +90,7 @@ const HousingTopStandard = ({ housing_top_fill }) => {
 }
 
 HousingTopStandard.propTypes = {
-    housing_top_fill: string
+    housingTopFill: string
 }
 
 export default HousingTopStandard

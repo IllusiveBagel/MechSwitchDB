@@ -67,13 +67,13 @@ const GridItem = ({ name, switchData, volume, type }) => {
             >
                 <Switch
                     id={switchData.id}
-                    stem_color={switchData.stem_color}
-                    stem_type={switchData.stem_type}
-                    stem_construction={switchData.stem_construction}
-                    housing_top_type={switchData.housing_top_type}
-                    housing_top_color={switchData.housing_top_color}
-                    housing_bottom_type={switchData.housing_bottom_type}
-                    housing_bottom_color={switchData.housing_bottom_color}
+                    stemColor={switchData.stemColor}
+                    stemType={switchData.stemType}
+                    stemConstruction={switchData.stemConstruction}
+                    housingTopType={switchData.housingTopType}
+                    housingTopColor={switchData.housingTopColor}
+                    housingBottomType={switchData.housingBottomType}
+                    housingBottomColor={switchData.housingBottomColor}
                     mount={switchData.mount}
                 />
             </CardMedia>

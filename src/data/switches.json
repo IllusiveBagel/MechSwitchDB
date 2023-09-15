@@ -1,0 +1,135 @@
+[
+    {
+        "id": "0001",
+        "name": "Cherry MX Black",
+        "switchData": {
+            "stemColor": "58,64,69",
+            "stemType": "standard",
+            "stemConstruction": "standard",
+            "housingTopType": "standard",
+            "housingTopColor": "58,64,69",
+            "housingBottomType": "standard",
+            "housingBottomColor": "58,64,69",
+            "mount": "Both"
+        },
+        "volume": "Normal",
+        "type": "Linear",
+        "factoryLubed": false,
+        "manufacturer": "cherry",
+        "brand": "cherry-mx"
+    },
+    {
+        "id": "0002",
+        "name": "Cherry MX Red",
+        "switchData": {
+            "stemColor": "220,65,58",
+            "stemType": "standard",
+            "stemConstruction": "standard",
+            "housingTopType": "standard",
+            "housingTopColor": "58,64,69",
+            "housingBottomType": "standard",
+            "housingBottomColor": "58,64,69",
+            "mount": "Both"
+        },
+        "volume": "Normal",
+        "type": "Linear",
+        "factoryLubed": false,
+        "manufacturer": "cherry",
+        "brand": "cherry-mx"
+    },
+    {
+        "id": "0003",
+        "name": "Cherry MX Brown",
+        "switchData": {
+            "stemColor": "103,72,66",
+            "stemType": "standard",
+            "stemConstruction": "standard",
+            "housingTopType": "standard",
+            "housingTopColor": "58,64,69",
+            "housingBottomType": "standard",
+            "housingBottomColor": "58,64,69",
+            "mount": "Both"
+        },
+        "volume": "Normal",
+        "type": "Tactile",
+        "factoryLubed": false,
+        "manufacturer": "cherry",
+        "brand": "cherry-mx"
+    },
+    {
+        "id": "0004",
+        "name": "Cherry MX Blue",
+        "switchData": {
+            "stemColor": "68,169,255",
+            "stemType": "standard",
+            "stemConstruction": "standard",
+            "housingTopType": "standard",
+            "housingTopColor": "58,64,69",
+            "housingBottomType": "standard",
+            "housingBottomColor": "58,64,69",
+            "mount": "Both"
+        },
+        "volume": "Loud",
+        "type": "Clicky",
+        "factoryLubed": false,
+        "manufacturer": "cherry",
+        "brand": "cherry-mx"
+    },
+    {
+        "id": "0005",
+        "name": "Cherry MX Green",
+        "switchData": {
+            "stemColor": "23,153,118",
+            "stemType": "standard",
+            "stemConstruction": "standard",
+            "housingTopType": "standard",
+            "housingTopColor": "58,64,69",
+            "housingBottomType": "standard",
+            "housingBottomColor": "58,64,69",
+            "mount": "Both"
+        },
+        "volume": "Loud",
+        "type": "Clicky",
+        "factoryLubed": false,
+        "manufacturer": "cherry",
+        "brand": "cherry-mx"
+    },
+    {
+        "id": "0006",
+        "name": "Cherry MX Clear",
+        "switchData": {
+            "stemColor": "103,72,66",
+            "stemType": "milky",
+            "stemConstruction": "standard",
+            "housingTopType": "standard",
+            "housingTopColor": "58,64,69",
+            "housingBottomType": "standard",
+            "housingBottomColor": "58,64,69",
+            "mount": "Both"
+        },
+        "volume": "Normal",
+        "type": "Tactile",
+        "factoryLubed": false,
+        "manufacturer": "cherry",
+        "brand": "cherry-mx"
+    },
+    {
+        "id": "0007",
+        "name": "Cherry MX White",
+        "switchData": {
+            "stemColor": "255,255,255",
+            "stemType": "standard",
+            "stemConstruction": "standard",
+            "housingTopType": "standard",
+            "housingTopColor": "58,64,69",
+            "housingBottomType": "standard",
+            "housingBottomColor": "58,64,69",
+            "mount": "Both"
+        },
+        "volume": "Loud",
+        "type": "Clicky",
+        "factoryLubed": false,
+        "manufacturer": "cherry",
+        "brand": "cherry-mx"
+    }
+]

@@ -18,97 +18,100 @@ import {
 
 const Switch = ({
     id,
-    stem_color,
-    stem_type,
-    stem_construction,
-    housing_top_type,
-    housing_top_color,
-    housing_bottom_type,
-    housing_bottom_color,
+    stemColor,
+    stemType,
+    stemConstruction,
+    housingTopType,
+    housingTopColor,
+    housingBottomType,
+    housingBottomColor,
     mount
 }) => {
-    let stem_fill;
+    let stemFill;
 
-    if (stem_color === '') {
-        stem_fill = 'rgba(255, 255, 255, 1)';
+    if (stemColor === '') {
+        stemFill = 'rgba(255, 255, 255, 1)';
     }
     else {
-        if (stem_type === 'transparent') {
-            stem_fill = `rgba(${stem_color}, .5)`;
+        if (stemType === 'transparent') {
+            stemFill = `rgba(${stemColor}, .5)`;
+        }
+        else if (stemType === 'milky') {
+            stemFill = `rgba(235, 232, 222, .8)`;
         }
         else {
-            stem_fill = `rgba(${stem_color}, 1)`;
+            stemFill = `rgba(${stemColor}, 1)`;
         }
     }
 
-    let housing_top_fill;
+    let housingTopFill;
 
-    if (housing_top_color === '') {
-        housing_top_fill = `rgba(255, 255, 255, .4)`;
+    if (housingTopColor === '') {
+        housingTopFill = `rgba(255, 255, 255, .4)`;
     }
     else {
-        if (housing_top_type === 'transparent') {
-            housing_top_fill = `rgba(${housing_top_color}, .6)`;
+        if (housingTopType === 'transparent') {
+            housingTopFill = `rgba(${housingTopColor}, .6)`;
         }
-        else if (housing_top_type === 'milky') {
-            housing_top_fill = `rgba(235, 232, 222, .8)`;
+        else if (housingTopType === 'milky') {
+            housingTopFill = `rgba(235, 232, 222, .8)`;
         }
         else {
-            housing_top_fill = `rgba(${housing_top_color}, 1)`;
+            housingTopFill = `rgba(${housingTopColor}, 1)`;
         }
     }
 
-    let housing_bottom_fill;
+    let housingBottomFill;
 
-    if (housing_bottom_color === '') {
-        housing_bottom_fill = 'rgba(255, 255, 255, .4)';
+    if (housingBottomColor === '') {
+        housingBottomFill = 'rgba(255, 255, 255, .4)';
     }
     else {
-        if (housing_bottom_type === 'transparent') {
-            housing_bottom_fill = `rgba(${housing_bottom_color}, .6)`;
+        if (housingBottomType === 'transparent') {
+            housingBottomFill = `rgba(${housingBottomColor}, .6)`;
         }
-        else if (housing_bottom_type === 'milky') {
-            housing_bottom_fill = `rgba(235, 232, 222, .8)`;
+        else if (housingBottomType === 'milky') {
+            housingBottomFill = `rgba(235, 232, 222, .8)`;
         }
         else {
-            housing_bottom_fill = `rgba(${housing_bottom_color}, 1)`;
+            housingBottomFill = `rgba(${housingBottomColor}, 1)`;
         }
     }
 
     return (
         <div className="c-switch__icon" data-icon-id={id} >
             <div className="c-switch__icon-stem">
-                {stem_construction === 'standard' &&
-                    <StemStandard stem_fill={stem_fill} />
+                {stemConstruction === 'standard' &&
+                    <StemStandard stemFill={stemFill} />
                 }
 
-                {stem_construction === 'cap' &&
-                    <StemCap stem_fill={stem_fill} />
+                {stemConstruction === 'cap' &&
+                    <StemCap stemFill={stemFill} />
                 }
 
-                {stem_construction === 'box' &&
-                    <StemBox stem_fill={stem_fill} />
+                {stemConstruction === 'box' &&
+                    <StemBox stemFill={stemFill} />
                 }
             </div>
 
             <div className="c-switch__icon-housing-top">
-                {stem_construction === 'standard' &&
-                    <HousingTopStandard housing_top_fill={housing_top_fill} />
+                {stemConstruction === 'standard' &&
+                    <HousingTopStandard housingTopFill={housingTopFill} />
                 }
-                {stem_construction !== 'standard' &&
-                    <HousingTopDefault housing_top_fill={housing_top_fill} />
+                {stemConstruction !== 'standard' &&
+                    <HousingTopDefault housingTopFill={housingTopFill} />
                 }
             </div>
 
             <div className="c-switch__icon-housing-bottom">
                 {mount === '5' &&
-                    <HousingBottomFive housing_bottom_fill={housing_bottom_fill} />
+                    <HousingBottomFive housingBottomFill={housingBottomFill} />
                 }
                 {mount === 'Both' &&
-                    <HousingBottomFive housing_bottom_fill={housing_bottom_fill} />
+                    <HousingBottomFive housingBottomFill={housingBottomFill} />
                 }
                 {mount === '3' &&
-                    <HousingBottomThree housing_bottom_fill={housing_bottom_fill} />
+                    <HousingBottomThree housingBottomFill={housingBottomFill} />
                 }
             </div>
         </div >
@@ -117,13 +120,13 @@ const Switch = ({
 
 Switch.propTypes = {
     id: string,
-    stem_color: string,
-    stem_type: string,
-    stem_construction: string,
-    housing_top_type: string,
-    housing_top_color: string,
-    housing_bottom_type: string,
-    housing_bottom_color: string,
+    stemColor: string,
+    stemType: string,
+    stemConstruction: string,
+    housingTopType: string,
+    housingTopColor: string,
+    housingBottomType: string,
+    housingBottomColor: string,
     mount: string
 }
 
